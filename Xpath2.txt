@@ -1,0 +1,63 @@
+################### Reinsurance contracts ####################
+ReinsuranceContracts.Treaty.Result.Table=treatySearchForm:t1
+xpath.ReinsuranceContracts.CreateTreaty.Button=//*[contains(@id,'genericButn')]/a
+xpath.RightNavigation.SearchTreatyId.InputText=//input[contains(@id,'treatySearchForm:it1')]
+xpath.RightNavigation.SearchTreatyNo.InputText=//input[contains(@id,'treatySearchForm:it2')]
+
+#################  Treaty General ####################
+xpath.TreatyGeneral.ActivateTreaty.Button=//div[contains(@id,'actTreaty')]/a
+xpath.TreatyGeneral.TreatyId.InputText=//label[text()="Treaty Id"]/parent::td/following-sibling::td/*[contains(@id,'content')]
+TreatyGeneral.TreatyNo.InputText=it6
+TreatyGeneral.TreatyRef.InputText=it2
+xpath.TreatyGeneral.TreatyBusiness.Dropdown=//label[text()='Treaty Business']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.TreatyType.Dropdown=//label[text()='Treaty Type']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.TreatySubtype.Dropdown=//label[text()='Treaty Subtype']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.TreatyRange.Dropdown=//label[text()='Treaty Range']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.ClassOfbusiness.Dropdown=//label[text()='Class Ofbusiness']//parent::td//following-sibling::td/select
+TreatyGeneral.Currency.InputText=limitCurrencyId
+xpath.TreatyGeneral.RIPremiumReserveMode.Dropdown=//label[text()='RI Premium reserve mode']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.RiLossresMode.Dropdown=//label[text()='Ri Lossres Mode']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.TreatyBase.Dropdown=//label[text()='Treaty Base']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.AdjusmentPeriod.Dropdown=//label[text()='Adjustment Period']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.CommissionType.Dropdown=//label[text()='Commission Type']//parent::td//following-sibling::td/select
+xpath.TreatyGeneral.ProfitCommissionType.Dropdown=//label[text()='Profit Commission Type']//parent::td//following-sibling::td/select
+TreatyGeneral.ProfitCommission.InputText=it7
+TreatyGeneral.StartDate.DateField=id4
+TreatyGeneral.EndDate.DateField=id5
+
+############### Reinsurers #############################
+xpath.Reinsurers.Create.ReinsurersBrokers.Button=//div[contains(@id,'teot1')]//*[contains(@id,'crRiReins')]/a
+ReinsurersBrokers.Result.Table=0:kjypt1:t1
+xpath.ReinsurersBrokers.Table.LeaderFlag.Dropdown=//label[text()='Leader Flag']//preceding-sibling::select
+
+############### Covers ################################
+xpath.Covers.Create.CoverGroup.Button=//div[contains(@id,'sdi1')]//div[contains(@id,'cb1')]/a
+xpath.Covers.CoverGroup.Result.Table=//*[contains(text(),'Cover Group')]/ancestor::h1/following-sibling::div//div[contains(@id,'pt1:t2::db')]//table
+xpath.Covers.CoverGroup.Table.CoverGroup.InputText=//input[contains(@id,'it2')]
+xpath.Covers.CoverGroup.Table.CoverGroupName.InputText=//input[contains(@id,'it3')]
+xpath.Covers.CoverGroup.Table.RIBusinessLineLOV.InputText=//input[contains(@id,'ilov1')]
+xpath.Covers.AddCover.Button=//div[contains(@id,'ctb1')]/a
+Covers.CoversPopup.Result.Table=resId1
+Covers.CoversPopup.InsrTypeLOV=val00
+Covers.CoversPopup.ApplyCover.Checkbox=sbc1
+xpath.Covers.CoversPopup.Ok.Button=//button[contains(@id,'pt1:d1::ok')]
+
+############### Clauses ##############################
+Clauses.TreatyClause.Result.Table=treatyClauseTbCmp
+xpath.Clauses.CreateTreatyClause.Button=//*[contains(@id,'createBtnCmp')]/a
+
+############### Ceded Premiums ###############
+CededPremiums.Table=pt1:t1
+xpath.CededPremiums.TreatySubtype.Input = //label[text()='Filter: Treaty Subtype']/preceding-sibling::input
+xpath.Clauses.TreatyClause.Table.ClauseType.Dropdown=//label[text()='Clause Type']//preceding-sibling::select
+xpath.Clauses.TreatyClause.Table.RetentionCurrency.Dropdown=//label[text()='Retention Currency']//preceding-sibling::select
+xpath.Clauses.TreatyClause.Table.Currency.Dropdown=//label[text()='Limit Currency']//preceding-sibling::select
+xpath.Right.Navigation.Search.Button=//span[text()='Search']/parent::a
+xpath.Right.Navigation.Policy.No.Input=//input[contains(@id,'PolicyNo')]
+xpath.CededPremiums.PremiumType.Input=//label[contains(text(),'Premium Type')]//preceding-sibling::input
+xpath.CededPremiums.DirectPremium.Input=//label[contains(text(),'Direct Premium')]//preceding-sibling::input
+xpath.CededPremiums.CoverDesc.Input=//label[contains(text(),'CoverDesc')]//preceding-sibling::input
+xpath.CededPremiums.TreatyId.Input=//label[contains(text(),'Ritrt Ri Treaty Id')]//preceding-sibling::input
+
+############### Ceded Claims ###############
+xpath.CededClaims.ClaimSearch.FilterClaimId.Input=//label[text()='Filter: Claim Id']//preceding-sibling::input

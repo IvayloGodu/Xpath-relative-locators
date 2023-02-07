@@ -1,0 +1,91 @@
+####################### Common ####################
+# Search tables
+Search.PolicySearch.Result.Table=policySearchTable
+Search.Agent.Result.Table=resultTableId
+
+# Main Navigation
+Main.Navigation.SearchClient.PID.InputText=qxmit1
+xpath.Main.Navigation.SaveButton.Button=//div[contains(@id,'commitBtn')]/a
+xpath.Main.Buttons.Premium.Button=//span[text()='Premium']
+
+# Right Navigation
+Right.Navigation.SearchPolicy.No.InputText=policySearchForm:eueit2
+xpath.Right.Navigation.SearchPolicy.Id.InputText=//label[contains(text(), 'Policy Id')]//preceding-sibling::input
+xpath.Right.Navigation.Search.Button=//span[text()='Search']
+xpath.Right.Navigation.Policy.No.Input=//input[contains(@id,'PolicyNo')]
+
+# Insurance Type
+InsuranceType.ProductSelection.InsuranceType.InputText=mvfit1
+InsuranceType.ProductSelection.Result.Table=resultTableId
+
+####################### Train steps ######################
+# Policy General
+xpath.PolicyGeneral.PID.TextField=//input[contains(@id,'clientCode::content')]
+xpath.PolicyGeneral.ConclusionDate.InputText=//label[text()='Conclusion Date']/preceding-sibling::input
+xpath.PolicyGeneral.DateGiven.InputText=//label[text()='Date Given']/preceding-sibling::input
+xpath.PolicyGeneral.InsrEnd.InputText=//label[text()='Insr End']/preceding-sibling::input
+Policy.General.Result.Table=t1:tabl
+xpath.PolicyGeneral.BillingsNumInstallments.Dropdown=//label[contains(text(),'Num Installments')]/preceding-sibling::select
+PolicyGeneral.BillingEditRecord.Button=edit1
+xpath.PolicyGeneral.InsrDuration.Dropdown=//label[text()='Dur Dimension']//preceding-sibling::select
+xpath.PolicyGeneral.InsrDuration.Number.InputFiled=//label[text()='Insr Duration']/preceding-sibling::input
+
+# Coverages
+Coverages.InsuredObject.Result.Table=insObjTbl
+Coverages.InsuredObject.AddObject.Button=add
+Coverages.InsuredObject.EditRecord.Button=edit2
+xpath.Coverages.InsuredObject.Address.TextArea=//div[contains(@id,'objectPopup::content')]//textarea
+xpath.Coverages.InsuredObject.Next.Button=//div[contains(@id,'objectPopup::content')]//span[text()='Next']
+xpath.Coverages.InsuredObject.Popup.City.TextField=//div[contains(@id,'objectPopup::content')]//label[text()='City']//preceding-sibling::input
+xpath.Coverages.InsuredObject.Popup.Country.TextField=//div[contains(@id,'objectPopup::content')]//label[text()='Country']//preceding-sibling::input
+xpath.Coverages.InsuredObject.Popup.PostCode.TextField=//div[contains(@id,'objectPopup::content')]//label[text()='Post Code']//preceding-sibling::input
+xpath.Coverages.InsuredObject.Popup.PropertyKind.Dropdown=//label[text()='Property Kind']/parent::td/following-sibling::td/select
+xpath.Coverages.InsuredObject.Popup.PropertyType.Dropdown=//label[text()='Property Type']/parent::td/following-sibling::td/select
+xpath.Coverages.InsuredObject.Popup.Save.Button=//div[contains(@id,'objectPopup::content')]//div[contains(@id,'globalCommit')]
+xpath.Coverages.InsuredObjectType.Property=//span[text()='Property']
+Coverages.Cover.Result.Table=acrt2
+Coverages.Cover.EditRecord.Button=acrt2:0:edit3
+fxpath.Coverages.Cover.ManualPremiumDimension.Dropdown=//label[text()='Manual premium dimension']//preceding-sibling::select
+xpath.Coverages.Cover.PopUp.Header=//div[text()='Cover']
+xpath.Coverages.Cover.Popup.Save.Button=//div[contains(@id,'acrpw1')]//img[contains(@src,'commit.png')]//parent::a
+xpath.Coverages.Cover.Table.AddCover.Button=//div[contains(@id,'addCover')]
+xpath.Coverages.Cover.ManualPremiumDimension.Input=//td[contains(@id,'acrt2:2:acrc36')]
+xpath.Coverages.Cover.Popup.Close.Button=//div[contains(@id,'zflpt1:globalClose')]
+xpath.Coverages.AddCover.Vandalism.Input=//input[contains(@id,'coversTbl:3:zflsbc2')]
+xpath.Change.Cover.Button=//img[@title='Change Cover']
+xpath.Change.Cover2.Button=//img[@title='Change Cover' and contains(@id,'acrt2:1')]
+xpath.Cover.Tariff.Percent.Input=//label[contains(text(),'Tariff Percent')]//preceding-sibling::input
+
+# Policy Rules
+xpath.PolicyTariffRule.Dropdown=//label[text()='Tariff Rule']//preceding-sibling::select
+
+# Payment Plan
+PaymentPlan.DuePremiums.Table=vfkpt1:t1
+xpath.PaymentPlan.CreatePlan=//span[text()='Create Plan']
+xpath.PaymentPlan.PlanFractions=//span[text()='Plan Fractions']
+
+# Confirm Application
+xpath.Application.ConfirmApplication.Button=//span[text()='Confirm Application']
+xpath.Application.Consistency.Button=//span[text()='Consistency']
+xpath.Application.ConvertApplication.Button=//span[text()='Convert Application']
+xpath.Application.PolicyStateName.OutputText=//label[text()='Policy State Name']//parent::td//following-sibling::td//span[contains(@id,'content')]
+xpath.Application.PolicyNo.OutputText=//label[text()='Policy No']//parent::td//following-sibling::td//span[contains(@id,'content')]
+
+################ Annexes ##############################
+xpath.Annex.OpenForChange.Button=//span[contains(text(),'Open For Change')]
+Annex.General.Annex.Table=annexTable
+xpath.Annex.OpenForChange.PopUp=//div[text()='Open For Change']
+xpath.Annex.MakeChanges.Button=//span[contains(text(),'Make Changes')]
+Annex.Create.Reason.Button=createBtn
+Annex.Reason.ResultTable.Table=rfrt2
+xpath.Annex.Reason.Dropdown=//label[text()='Annex Reason']//preceding-sibling::select
+xpath.Annex.Confirm.Changes=//*[substring(@id, string-length(@id) - string-length('ctb2') +1) = 'ctb2']
+xpath.Annex.CreateAnnex.Button=//div[contains(@id,'crAnnexBtn')]
+xpath.Confirm.Button=//span[contains(text(),'Confirm')]
+xpath.Annex.Reasons.Dropdown=//select[contains(@id,'annexReasonLOV2Cmp::content')]
+xpath.Annex.StartDate.TextField=//tr[contains(@id,'pt1:id1')]//input
+xpath.AnnexOpenForChange.Ok.Button=//div[contains(@id,'OkBtn')]
+Annex.AddReason.Button=addAnnexReasonBtn
+xpath.Annex.Reason.Button=//a[@title='Add Reason']
+xpath.Apply.Button=//span[contains(text(),'Apply')]
+xpath.PolicyChange.AnnexGeneral.InsrBegin.TextField=//span[contains(@id,'pt1:ot15')]
